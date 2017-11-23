@@ -10,5 +10,5 @@ docker run -it --rm\
 	-p 4000:8888\
 	-p 4001:6006\
 	-v $(PWD)/notebooks:/notebooks:rw\
-	--name tf-notebooks-py3\
-	tensorflow/tensorflow:latest-py3
+	--name tf-jupyter\
+	tf-jupyter
