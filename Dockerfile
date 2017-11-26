@@ -1,4 +1,6 @@
-FROM tensorflow/tensorflow:latest-py3
+# Use the below option if not using accelerators
+#FROM tensorflow/tensorflow:latest-py3
+FROM tensorflow/tensorflow:latest-gpu-py3
 
 COPY requirements.txt /tmp
 
