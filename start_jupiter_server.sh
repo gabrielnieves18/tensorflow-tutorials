@@ -9,6 +9,7 @@
 docker run -it --rm\
 	-p 4000:8888\
 	-p 4001:6006\
-	-v $(PWD)/notebooks:/notebooks:rw\
+	-v $PWD/notebooks:/notebooks:rw\
+	-v /Volumes/Samsung\ Portable\ SSD\ T3\ Media/ImageNet/ImageNet\ Object\ Detection\ Challenge\ 2017/ILSVRC-TRAIN:/notebooks/dataset:ro\
 	--name tf-jupyter\
 	tf-jupyter
